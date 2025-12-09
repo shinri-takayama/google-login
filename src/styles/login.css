@@ -1,0 +1,100 @@
+/* src/styles/login.css */
+
+/* 全体レイアウト */
+.login-page {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #111827;
+}
+
+/* 上のグレー帯 */
+.login-header {
+  height: 44px;
+  background: #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+/* 右上の i ボタン */
+.login-info-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* 中央コンテンツ */
+.login-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px 48px;
+  box-sizing: border-box;
+}
+
+/* タイトル Realibrary */
+.login-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin-bottom: 32px;
+}
+
+/* Google サインインボタン */
+.login-google-btn {
+  min-width: 180px;
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.18);
+}
+
+
+.login-google-btn:hover {
+  background: #f9fafb;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.22);
+}
+
+.login-google-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+/* Google　アイコン */
+.login-google-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+
+/* ステータス表示（エラーなど） */
+.login-status {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #6b7280;
+  min-height: 1.1rem;
+  text-align: center;
+}
